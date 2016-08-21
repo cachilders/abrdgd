@@ -1,11 +1,12 @@
-var express = require('express');
-var partials = require('express-partials');
-var session = require('express-session');
-var bodyParser = require('body-parser');
+const express = require('express');
+const partials = require('express-partials');
+const session = require('express-session');
+const bodyParser = require('body-parser');
+const fs = require('fs');
 
-var app = express();
+const app = express();
 
-var port = process.env.PORT||3000;
+const port = process.env.PORT||3000;
 
 app.listen(port);
 

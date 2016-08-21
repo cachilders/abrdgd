@@ -1,0 +1,23 @@
+{
+  "name": "abrdgd",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "cachilders"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/cachilders/abrdgd",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "ui-router#^0.3.1",
+    "angular": "^1.5.8",
+    "jquery": "^3.1.0"
+  }
+}
