@@ -1,1 +1,1 @@
-Just messing around with express. Maybe it'll be the basis of a thing maybe.
+A seed project scaffold for me and mine.

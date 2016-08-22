@@ -2,9 +2,17 @@
 <html>
   <header>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <style>.active { color: red; font-weight: bolder; }</style>
   </header>
   <body ng-app="abrdgd">
-    
-    <script src="lib/angular.min.js"></script>
-    <script src="lib/angular-ui-router.min.js"></script>
+
+    <a ui-sref="first" ui-sref-active="active">One state</a>
+    <a ui-sref="second" ui-sref-active="active">Another state</a>
+
+
+    <ui-view></ui-view>
+
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-ui-router.js"></script>
+    <script src="routes.js"></script>
   </body>
