@@ -1,8 +1,10 @@
 var abrdgd = angular.module('abrdgd', ['ui.router']);
 
-abrdgd.config(function($stateProvider) { // Angular requires this config block to register injected provider within block
+abrdgd.config(function($stateProvider, $urlRouterProvider) { // Angular requires this config block to register injected provider within block
 
-  var home = {
+  $stateProvider
+
+  .home = {
     name: 'home',
     url: '/',
     views: {
@@ -12,7 +14,7 @@ abrdgd.config(function($stateProvider) { // Angular requires this config block t
     }
   }
 
-  var about = {
+  .about = {
     name: 'about',
     url: '/about',
     views: {
@@ -22,7 +24,6 @@ abrdgd.config(function($stateProvider) { // Angular requires this config block t
     }
   }
 
-  $stateProvider.state(home);
-  $stateProvider.state(about);
+  $urlRouterProvider.otherwise('/');
 
 });
