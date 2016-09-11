@@ -7,6 +7,7 @@ mongoose.connect(mongoURI);
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'Mongoose did wet the bed.'));
 db.once('open', function () {
+  console.log('Mongoose is up and running.')
 });
 
 module.exports = db;
