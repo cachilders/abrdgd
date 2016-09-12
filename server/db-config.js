@@ -1,6 +1,8 @@
 var mongoose = require('mongoose');
 var path = require('path');
 
+// In the interest of cleanliness, a db-schemas directory can be found in the server directory
+
 mongoURI = process.env.MONGODB_URI || 'mongodb://localhost/abrdgd'
 mongoose.connect(mongoURI);
 
