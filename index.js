@@ -8,6 +8,7 @@ const passport      = require('passport');
 const cookieParser  = require('cookie-parser');
 const strategy      = require('./server/setup-passport');
 const db            = require('./server/db-config');
+const sampleSchema  = require('./server/db-schemas/sample.js') // You'll want to require your schemas where you use them with Mongoose
 
 const app = express();
 
