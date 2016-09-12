@@ -7,6 +7,7 @@ const fs            = require('fs');
 // const passport      = require('passport'); // Uncomment for authentication services
 // const cookieParser  = require('cookie-parser');
 // const strategy      = require('./server/setup-passport');
+const synaptic      = require('./server/setup-synaptic.js') // github.com/cazala/synaptic
 const db            = require('./server/db-config');
 const sampleSchema  = require('./server/db-schemas/sample.js') // You'll want to require your schemas where you use them with Mongoose
 
