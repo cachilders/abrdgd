@@ -1,9 +1,10 @@
-const express = require('express');
-const partials = require('express-partials');
-const session = require('express-session');
-const bodyParser = require('body-parser');
-const fs = require('fs');
-const db = require('./db-config');
+require('dotenv').config();
+const express     = require('express');
+const partials    = require('express-partials');
+const session     = require('express-session');
+const bodyParser  = require('body-parser');
+const fs          = require('fs');
+const db          = require('./db-config');
 
 const app = express();
 
