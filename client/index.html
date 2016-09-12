@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
   <header>
+    <!--Style and Meta-->
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <title>This Very App</title>
   </header>
   <body ng-app="abrdgd">
 
     <ui-view></ui-view>
 
+    <!--Dependencies-->
     <script src="lib/angular.js"></script>
     <script src="lib/angular-ui-router.js"></script>
-    <script src="routes.js"></script>
+    <!--Controllers-->
+    <script src="views/view1/view1.js"></script>
+    <script src="views/view2/view2.js"></script>
+    <script src="views/nested/nested.js"></script>
+    <!--App-->
+    <script src="app.js"></script>
   </body>
 </html>
