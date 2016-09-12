@@ -1,1 +1,16 @@
 <h5>I'm the same nested view from view to view.</h5>
+
+
+<script src="https://cdn.auth0.com/js/lock/10.2/lock.min.js"></script>
+<script type="text/javascript">
+  var lock = new Auth0Lock('uLkFsdaryn7co1bBNoI0ROqKinMBPYi4', 'engine16.auth0.com', {
+    auth: {
+      redirectUrl: '',
+      responseType: 'code',
+      params: {
+        scope: 'openid email' // Learn about scopes: https://auth0.com/docs/scopes
+      }
+    }
+  });
+</script>
+<button data-ng-click="lock.show();">Login</button>
