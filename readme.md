@@ -6,8 +6,9 @@ It is not ready for prime time. Please submit PRs with the intent of providing a
 
 [note] Passport is configured on the server side to work variables entered into .env from Auth0. It's provisionally tested/working, but will require front end login hooks and subsequent handling to make magic happen. Read the docs to go to there.
 
+[note] Synaptic.js hooks have been added to the server. It's a complex bit of kit, and none of the real work has been done here. If you don't mean to use it, delete at your leisure.
+
 TODO:
 * Update app config to Angular component model (In addition to working with ng1, the component setup will make for an educational and functional opportunity to push toward ng2)
-* Configure generic Synaptic.js setup (ABRDGD is a reflection of my intents for rapid development. It will include basic hooks for neural nets)
 * React! (Turns out UI Router is at home with React so ABRDGD will have a React flavor)
 * Redux (See React, but it will probably be useful for both the Angular and React flavors of this scaffold)
