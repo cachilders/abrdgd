@@ -9,7 +9,6 @@
   "author": "cachilders",
   "license": "MIT",
   "dependencies": {
-    "baffle": "^0.3.5",
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
     "dotenv": "^2.0.0",
