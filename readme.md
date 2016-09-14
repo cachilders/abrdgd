@@ -6,8 +6,5 @@ MongoDB is set up for use with either .env or your localhost. For the former you
 
 Passport is configured on the server side to work variables entered into .env from Auth0. It's provisionally tested/working, but will require front end login hooks and subsequent handling to make magic happen. Read the docs to go to there.
 
-
-
 TODO:
 * Update app config to Angular component model (In addition to working with ng1, the component setup will make for an educational and functional opportunity to push toward ng2)
-* React! (Turns out UI Router is at home with React so ABRDGD will have a React flavor)

@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express       = require('express');
+const app           = express();
 const partials      = require('express-partials');
 const session       = require('express-session');
 const bodyParser    = require('body-parser');
@@ -10,10 +11,7 @@ const fs            = require('fs');
 // const strategy      = require('./server/setup-passport');
 const db            = require('./server/db-config');
 const sampleSchema  = require('./server/db-schemas/sample.js') // You'll want to require your schemas where you use them with Mongoose
-// Optional — like obviously, but these might be fun
 const synaptic      = require('./server/setup-synaptic.js') // github.com/cazala/synaptic
-
-const app = express();
 
 const port = process.env.PORT||3000;
 
@@ -21,7 +19,6 @@ app.listen(port);
 console.log('Server now listening on port ' + port);
 
 app.use(express.static(__dirname + "/client"));
-
 // app.use(cookieParser()); // Uncomment for authentication services
 // app.use(session({ secret: process.env.AUTH0_CLIENT_SECRET, resave: false,  saveUninitialized: false }));
 
