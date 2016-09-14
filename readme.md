@@ -8,6 +8,8 @@ It is not ready for prime time. Please submit PRs with the intent of providing a
 * Synaptic.js hooks have been added to the server. It's a complex bit of kit, and none of the real work has been done here. If you don't mean to use it, delete at your leisure.
 * Also dependencies are in place for Babel, Webpack, Mocha, and Redux (also ng-redux). They're not hooked up. Pardon the mess.
 
+[note] Synaptic.js hooks have been added to the server. It's a complex bit of kit, and none of the real work has been done here. If you don't mean to use it, delete at your leisure.
+
 TODO:
 * Setup task runner / linting / Mocha
 * Update app config to Angular component model
