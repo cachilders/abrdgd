@@ -4,25 +4,26 @@ const partials      = require('express-partials');
 const session       = require('express-session');
 const bodyParser    = require('body-parser');
 const fs            = require('fs');
-// const passport      = require('passport'); // Uncomment for authentication services
+// Uncomment this block as well as those below to use Auth0
+// const passport      = require('passport');
 // const cookieParser  = require('cookie-parser');
 // const strategy      = require('./server/setup-passport');
-const synaptic      = require('./server/setup-synaptic.js') // github.com/cazala/synaptic
 const db            = require('./server/db-config');
 const sampleSchema  = require('./server/db-schemas/sample.js') // You'll want to require your schemas where you use them with Mongoose
+// Optional — like obviously, but these might be fun
+const synaptic      = require('./server/setup-synaptic.js') // github.com/cazala/synaptic
 
 const app = express();
 
 const port = process.env.PORT||3000;
 
 app.listen(port);
+console.log('Server now listening on port ' + port);
 
 app.use(express.static(__dirname + "/client"));
 
 // app.use(cookieParser()); // Uncomment for authentication services
 // app.use(session({ secret: process.env.AUTH0_CLIENT_SECRET, resave: false,  saveUninitialized: false }));
-
-// Routes
 
 app.get('/', (req, res) => res.redirect('/index.html'))  // Ultimately needs to be /public
 
@@ -44,8 +45,6 @@ app.get('/furthermore', (req, res) => res.send('Sup.'))
 //     user: req.user
 //   });
 // });
-
-console.log('Server now listening on port ' + port);
 
 // app.use(passport.initialize()); // Uncomment for authentication services
 // app.use(passport.session());
