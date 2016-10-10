@@ -19,6 +19,7 @@ app.listen(port);
 console.log('Server now listening on port ' + port);
 
 app.use(express.static(__dirname + "/client"));
+app.use(bodyParser.json());
 // app.use(cookieParser()); // Uncomment for authentication services
 // app.use(session({ secret: process.env.AUTH0_CLIENT_SECRET, resave: false,  saveUninitialized: false }));
 
